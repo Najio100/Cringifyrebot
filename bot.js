@@ -16,6 +16,7 @@ bot.on('message', (msg) => {
   const updatedText = userText.replace(/ /g, draw);
 
   bot.sendMessage(chatId, updatedText);
+  if (userText === '/start') bot.sendMessage(chatId,"Hello! send a text to cringe it");
 });
 
 console.log('Bot is running...');
